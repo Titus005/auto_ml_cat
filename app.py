@@ -60,7 +60,7 @@ if choice == "ML":
         setup(df,target=y)
         setup_df = pull()
         st.info('This is the ML experiment settings ')
-        st.dataframe(setup_df)
+        st.dataframe(setup_df.astype(str)
         best_model = compare_models()
         compare_df = pull()
         st.info('This is the ML Model Ranking')
